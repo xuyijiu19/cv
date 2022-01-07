@@ -1,10 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<!-- head and meta -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="COMP3340 Assignment 1" />
+  <meta name="keywords" content="PHP, MySQL, JavaScript">
+  <meta name="author" content="Yijiu Xu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yijiu's Personal Site</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<!-- body -->
+
+<body>
+  <table cellspacing="20">
+    <td>
+      <!-- insert my photo as the the first table data-->
+      <img src="images/circle-cropped.png" alt="XU Yijiu's profile picture" style="width:120px;height:120px;">
+    </td>
+    <td>
+      <!-- heading -->
+      <h1>XU Yijiu</h1>
+      <!-- emphasized slogan -->
+      <p><em>Keep Calm and Code On</em></p>
+    </td>
+  </table>
+
+  <!-- breaking line -->
+  <hr />
+  <!-- bio -->
+  <p>
+    Hey guys! I'm an international student doing my second degree in Computer Science while my first degree is in Mechanical Engineering.
+    I love hiking, cooking, food and coffee and I hate to write lengthy paragraphs.
+    I've never been to Canada though I am already considered 3rd year student in U of Windsor(thanks to Covid-19, LoL).
+    I wish to meet some of you guys in person this coming Fall.
+  </p>
+  <!-- why taking this course -->
+  <p>
+    I am a beginner in Web development and I wish to explore and develop my interest in this area.
+    This is the first website I created while I am learning HTML from scrach now. I'm glad that this isn't too difficult for me.
+    I am dedicated to learn to create a dynamic website(something good enough to be put in my resume) by the end of this course.
+  </p>
+
+  <!-- breaking line -->
+  <hr />
+  <p>
+    <!-- link for home page -->
+    <a href="index.html">Home</a>
+  </p>
+  <p>
+    <!-- link for my resume -->
+    <a href="resume.html">Yijiu's Resume</a>
+  </p>
+  <p>
+    <!-- link for my useful resourses -->
+    <a href="resourses.html">Useful Resourses</a>
+  </p>
+
+  <hr>
+
+  <!-- Display current date and time -->
+  <p><span id="datetime"></span>.</p>
+
+  <script>
+    var dt = new Date();
+    document.getElementById('datetime').innerHTML = dt;
+  </script>
+
+</body>
+
 </html>
